@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node index.ts",
+    "pb": "pbjs -t static-module -w es6 -o ../web/src/components/compiled.js message.proto",
+    "to-ts": "pbts -o ../web/src/components/compiled.d.ts ../web/src/components/compiled.js"
+  },
+  "type": "commonjs",
+  "types": "node",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "protobufjs": "^7.2.2",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.12"
+  }
+}

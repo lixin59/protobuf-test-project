@@ -1,0 +1,3 @@
+# 大仓多内部包引用的workspace协议配置
+packages:
+  - 'packages/**'
